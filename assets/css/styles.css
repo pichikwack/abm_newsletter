@@ -432,7 +432,7 @@ button{
   	display: inline-block;
 	vertical-align: top;
 	color: transparent;
-	-webkit-text-stroke: 1px #9126FD;
+	-webkit-text-stroke: 1px #fff;
 	font-size: 3.125vw;
 	line-height: 3.64583vw;
 	font-weight: 900;
