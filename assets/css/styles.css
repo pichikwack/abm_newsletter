@@ -446,6 +446,7 @@ button{
 	margin-top: 0.41667vw;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
+	background: #1F6AFF;
 }
 
 .about__storytitle .sqaure {
@@ -456,6 +457,7 @@ button{
 	margin-top: 0.41667vw;
 	-webkit-border-radius: 0 50% 50% 0;
 	border-radius: 0 50% 50% 0;
+	background: #1F6AFF;
 }
 
 .about__img{
