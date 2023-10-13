@@ -425,14 +425,6 @@ button{
 
 .about__description{
   margin-bottom: var(--mb-2);
-font-family: 'NanumSquareBold';
-display: inline-block;
-vertical-align: top;
-color: transparent;
--webkit-text-stroke: 1px #9126FD;
-font-size: 3.125vw;
-line-height: 3.64583vw;
-font-weight: 900;
 }
 
 .about__storytitle{
