@@ -438,6 +438,26 @@ button{
 	font-weight: 900;
 }
 
+.about__storytitle .round {
+	display: inline-block;
+	vertical-align: top;
+	width: 2.8125vw;
+	height: 2.8125vw;
+	margin-top: 0.41667vw;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.about__storytitle .sqaure {
+	display: inline-block;
+	vertical-align: top;
+	width: 2.8125vw;
+	height: 2.8125vw;
+	margin-top: 0.41667vw;
+	-webkit-border-radius: 0 50% 50% 0;
+	border-radius: 0 50% 50% 0;
+}
+
 .about__img{
   width: 200px;
   justify-self: center;
