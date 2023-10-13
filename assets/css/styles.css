@@ -1,6 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
-@import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css:wght@400;500;600;900&display=swap');
+@import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css:wght@400;500;600;900&display=swap');
 
 
 /*=============== VARIABLES CSS ===============*/
@@ -425,6 +425,14 @@ button{
 
 .about__description{
   margin-bottom: var(--mb-2);
+font-family: 'NanumSquareBold';
+display: inline-block;
+vertical-align: top;
+color: transparent;
+-webkit-text-stroke: 1px #9126FD;
+font-size: 3.125vw;
+line-height: 3.64583vw;
+font-weight: 900;
 }
 
 .about__storytitle{
