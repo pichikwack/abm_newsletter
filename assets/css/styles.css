@@ -1,5 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+@import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css:wght@400;500;600;900&display=swap');
+
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -427,7 +429,7 @@ button{
 
 .about__storytitle{
  	font-family: 'NanumSquareBold';
-  display: inline-block;
+  	display: inline-block;
 	vertical-align: top;
 	color: transparent;
 	-webkit-text-stroke: 1px #9126FD;
