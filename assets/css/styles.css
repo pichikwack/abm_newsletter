@@ -791,7 +791,7 @@ button{
   }
 
   .home__img{
-    height: 200px;
+    position : relative;
   }
   .home__buttons{
     flex-direction: column;
