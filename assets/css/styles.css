@@ -16,8 +16,8 @@
   --text-color-light: hsl(var(--hue), 0%, 55%);
    
   /*solid*/
-  --body-color: hsl(335, 89%, 89%);
-  --container-color: hsl(334, 12%, 62%);
+  --body-color: hsl(332, 44%, 92%);
+  --container-color: hsl(335, 89%, 89%);
 
   /*========== Font and typography ==========*/
   --body-font: 'SUIT', sans-serif;
