@@ -936,7 +936,8 @@ button{
     padding-top: 0;
   }
   .home__img{
-    height: 400px;
+    right: 1%;
+    left: 1%;
     transform: translateY(-3rem);
   }
   .home__indicator{
@@ -1018,7 +1019,7 @@ button{
 
 @media screen and (min-width: 1200px){
   .home__img{
-    height: 420px;
+    height: 500px;
   }
   .swiper-pagination{
     margin-top: var(--mb-2-5);
