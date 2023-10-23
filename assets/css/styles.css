@@ -1,6 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css:wght@400;500;600;900&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css:wght@400;500;600;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/balorune');
+@import url('https://fonts.cdnfonts.com/css/bochan-serif');
 
 
 /*=============== VARIABLES CSS ===============*/
@@ -11,13 +13,13 @@
   --hue: 14;
   --first-color: hsl(var(--hue), 91%, 54%);
   --first-color-alt: hsl(var(--hue), 91%, 50%);
-  --title-color: hsl(var(--hue), 0%, 0%);
+  --title-color: hsl(1, 69%, 50%);
   --text-color: hsl(var(--hue), 0%, 15%);
   --text-color-light: hsl(var(--hue), 0%, 55%);
    
   /*solid*/
-  --body-color: hsl(332, 44%, 92%);
-  --container-color: hsl(335, 89%, 89%);
+  --body-color: hsl(38, 20%, 92%);
+  --container-color: hsla(38, 20%, 92%, 0.836);
 
   /*========== Font and typography ==========*/
   --body-font: 'SUIT', sans-serif;
@@ -86,7 +88,8 @@ h1,h2,h3,h4{
 }
 
 ul{
-  list-style: none;
+  list-style: square;
+  font-size: var(--small-font-size);
 }
 
 a{
@@ -112,7 +115,7 @@ button{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section{
-  padding: 4.5rem 0 2rem;
+  padding: 4.5rem 0 0rem;
 }
 
 .section__title{
@@ -211,6 +214,7 @@ button{
   flex-direction: column;
   align-items: center;
   row-gap: 1.5rem;
+  list-style: none;
 }
 
 .nav__link{
@@ -248,6 +252,31 @@ button{
   background-color: var(--title-color);
   border-radius: 50%;
 }
+
+.responsive iframe{
+  position:absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  max-width:1000px;
+  max-height:562px;
+  }
+  div.responsive{
+  
+  padding-bottom: 56.25%;
+  position:relative;
+  height:0;
+  width:100%;
+  max-width:1000px;
+  
+  }
+  .player{
+  max-height: 562px;
+  display: flex;
+  justify-content: center;
+  background-color:black;
+  }
 
 /*=============== HOME ===============*/
 .home__content{
@@ -319,6 +348,7 @@ button{
   justify-content: space-between;
 }
 
+
 /* Swiper Class */
 .swiper-pagination{
   position: initial;
@@ -386,10 +416,16 @@ button{
 .category__container{
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem 2rem;
+  list-style: square;
+}
+
+.category__ul{
+  display: list-item;
+  list-style: square;
 }
 
 .category__data{
-  text-align: center;
+  text-align: left;
 }
 
 .category__img{
@@ -408,7 +444,7 @@ button{
 
 /*=============== ABOUT ===============*/
 .about__container{
-  row-gap: 2rem;
+  row-gap: 0rem;
 }
 
 .about__data{
@@ -527,12 +563,13 @@ button{
 }
 
 .discount__data{
-  text-align: center;
+  text-align: left;
 }
 
 .discount__title{
-  font-size: var(--h2-font-size);
+  font-size: var(--biggest-font-size);
   margin-bottom: var(--mb-2);
+  font-family: "Bochan Serif";
 }
 
 .discount__img{
@@ -628,24 +665,6 @@ button{
   margin-bottom: var(--mb-1-5);
 }
 
-.newsletter__form{
-  background: var(--container-color);
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  border-radius: .75rem;
-}
-
-.newsletter__input{
-  width: 70%;
-  padding: 0 .5rem;
-  background: none;
-  color: var(--title-color);
-}
-
-.newsletter__input::placeholder{
-  color: var(--text-color);
-}
 
 /*=============== FOOTER ===============*/
 .footer{
@@ -721,6 +740,7 @@ button{
 }
 
 .footer__links{
+  list-style: none;
   display: grid;
   row-gap: .35rem;
 }
@@ -791,7 +811,7 @@ button{
   }
 
   .home__img{
-    position : relative;
+    height: 200px;
   }
   .home__buttons{
     flex-direction: column;
@@ -801,7 +821,7 @@ button{
 
   .category__container,
   .trick__container{
-    grid-template-columns: .8fr;
+    grid-template-columns: .5fr;
     justify-content: center;
   }
 }
@@ -851,7 +871,7 @@ button{
 
   .home__content{
     padding: 8rem 0 2rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
   }
   .home__img{
@@ -862,7 +882,7 @@ button{
   }
 
   .category__container{
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
   }
 
@@ -897,11 +917,11 @@ button{
     order: -1;
   }
   .discount__data{
-    padding-right: 6rem;
+    padding-left: 0rem;
   }
 
   .newsletter__container{
-    grid-template-columns: .5fr;
+    grid-template-columns: .8fr;
   }
 
   .footer__container{
@@ -936,8 +956,7 @@ button{
     padding-top: 0;
   }
   .home__img{
-    right: 1%;
-    left: 1%;
+    height: 400px;
     transform: translateY(-3rem);
   }
   .home__indicator{
@@ -963,10 +982,14 @@ button{
   }
 
   .category__container{
-    column-gap: 8rem;
+    column-gap: 5rem;
   }
   .category__img{
     width: 200px;
+  }
+  .category__description{
+    color: var(--title-color);
+    font-size: var(--small-font-size);
   }
 
   .about__container{
@@ -1019,7 +1042,7 @@ button{
 
 @media screen and (min-width: 1200px){
   .home__img{
-    height: 500px;
+    height: 420;
   }
   .swiper-pagination{
     margin-top: var(--mb-2-5);
