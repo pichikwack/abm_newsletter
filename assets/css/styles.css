@@ -1,9 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css:wght@400;500;600;900&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css:wght@400;500;600;900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/balorune');
 @import url('https://fonts.cdnfonts.com/css/bochan-serif');
-
+@import url('https://fonts.cdnfonts.com/css/maria-2');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -19,7 +18,7 @@
    
   /*solid*/
   --body-color: hsl(38, 20%, 92%);
-  --container-color: hsla(38, 20%, 92%, 0.836);
+  --container-color: hsl(38, 20%, 92%);
 
   /*========== Font and typography ==========*/
   --body-font: 'SUIT', sans-serif;
@@ -54,7 +53,7 @@
 @media screen and (min-width: 992px) {
   :root {
     --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
+    --h1-font-size: 2.5rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -89,7 +88,15 @@ h1,h2,h3,h4{
 
 ul{
   list-style: square;
-  font-size: var(--small-font-size);
+  line-height: 1.8;
+  margin: 0;
+  padding-inline-start: 2em;
+}
+
+ol{
+  line-height: 1.8;
+  padding-inline-start: 2em;
+  margin-bottom: var(--mb-1);
 }
 
 a{
@@ -113,14 +120,15 @@ button{
   font-size: var(--normal-font-size);
 }
 
+
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section{
   padding: 4.5rem 0 0rem;
 }
 
 .section__title{
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-2);
+  font-size: var(--h1-font-size);
   text-align: center;
 }
 
@@ -162,6 +170,7 @@ button{
   align-items: center;
   column-gap: .5rem;
   font-weight: var(--font-medium);
+  font-family: "Maria";
 }
 
 .nav__logo-img{
@@ -278,6 +287,13 @@ button{
   background-color:black;
   }
 
+  .by{
+    font-family: "Maria";
+    color: var(--title-color);
+    margin-top: var(--mb-0-25);    
+    margin-bottom: var(--mb-1);    
+  }
+  
 /*=============== HOME ===============*/
 .home__content{
   row-gap: 1rem;
@@ -333,8 +349,7 @@ button{
 }
 
 .home__title{
-  font-size: var(--biggest-font-size);
-  font-weight: var(--font-black);
+  font-size: var(--h2-font-size);
   line-height: 109%;
   margin-bottom: var(--mb-1);
 }
@@ -348,6 +363,99 @@ button{
   justify-content: space-between;
 }
 
+
+/* Swiper Class */
+.swiper-pagination{
+  position: initial;
+  margin-top: var(--mb-1);
+}
+
+.swiper-pagination-bullet{
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 .5rem;
+} 
+
+.swiper-pagination-bullet-active{
+  width: 1.5rem;
+  height: 5px;
+  border-radius: .5rem;
+}
+
+/*=============== IT ===============*/
+.it__content{
+  row-gap: 1rem;
+}
+
+.it__group{
+  display: grid;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.it__img{
+  height: 250px;
+  justify-self: center;
+}
+
+.it__indicator{
+  width: 8px;
+  height: 8px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 7rem;
+  right: 2rem;
+}
+
+.it__indicator::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 48px;
+  background-color: var(--title-color);
+  top: -3rem;
+  right: 45%;
+}
+
+.it__details-img{
+  position: absolute;
+  right: .5rem;
+}
+
+.it__details-title,
+.it__details-subtitle{
+  display: block;
+  font-size: var(--small-font-size);
+  text-align: right;
+}
+
+.it__subtitle{
+  font-size: var(--h3-font-size);
+  text-transform: uppercase;
+  margin-bottom: var(--mb-1);
+}
+
+.it__title{
+  font-size: var(--h2-font-size);
+  line-height: 109%;
+  margin-bottom: var(--mb-1);
+}
+
+.it__description{
+  margin-bottom: var(--mb-1);
+  vertical-align: top;
+}
+
+.it__buttons{
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Swiper Class */
 .swiper-pagination{
@@ -568,8 +676,13 @@ button{
 
 .discount__title{
   font-size: var(--biggest-font-size);
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
   font-family: "Bochan Serif";
+}
+
+.discount__subtitle{
+  margin-bottom: var(--mb-1);
+  font-family: "Maria";
 }
 
 .discount__img{
@@ -819,6 +932,16 @@ button{
     row-gap: 1rem;
   }
 
+  .it__img{
+    height: 200px;
+  }
+  .it__buttons{
+    flex-direction: column;
+    width: max-content;
+    row-gap: 1rem;
+  }
+
+
   .category__container,
   .trick__container{
     grid-template-columns: .5fr;
@@ -867,6 +990,15 @@ button{
   .nav__link{
     text-transform: initial;
     font-weight: initial;
+  }
+
+  .it__content{
+    padding: 8rem 0 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  }
+  .it__img{
+    height: 300px;
   }
 
   .home__content{
@@ -945,7 +1077,8 @@ button{
 
   .section__title{
     font-size: var(--h1-font-size);
-    margin-bottom: 3rem;
+    text-align: left;
+    margin-bottom: var(--mb-1);
   }
 
   .home__content{
@@ -977,6 +1110,39 @@ button{
     margin-bottom: var(--mb-1-5);
   }
   .home__description{
+    margin-bottom: var(--mb-2-5);
+    padding-right: 2rem;
+  }
+
+  .it__content{
+    padding-top: 9rem;
+    gap: 3rem;
+  }
+  .it__group{
+    padding-top: 0;
+  }
+  .it__img{
+    height: 400px;
+    transform: translateY(-3rem);
+  }
+  .it__indicator{
+    top: initial;
+    right: initial;
+    bottom: 15%;
+    left: 45%;
+  }
+  .it__indicator::after{
+    top: 0;
+    height: 75px;
+  }
+  .it__details-img{
+    bottom: 0;
+    right: 58%;
+  }
+  .it__title{
+    margin-bottom: var(--mb-1-5);
+  }
+  .it__description{
     margin-bottom: var(--mb-2-5);
     padding-right: 2rem;
   }
@@ -1041,6 +1207,9 @@ button{
 }
 
 @media screen and (min-width: 1200px){
+  .it__img{
+    height: 420;
+  }
   .home__img{
     height: 420;
   }
