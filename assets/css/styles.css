@@ -129,7 +129,7 @@ button{
 
 .section__title{
   font-size: var(--h1-font-size);
-  text-align: center;
+  text-align: left;
 }
 
 /*=============== LAYOUT ===============*/
@@ -436,8 +436,7 @@ button{
 }
 
 .it__subtitle{
-  font-size: var(--h3-font-size);
-  text-transform: uppercase;
+  font-family: "Maria";
   margin-bottom: var(--mb-1);
 }
 
@@ -688,6 +687,11 @@ button{
 .discount__img{
   width: 200px;
   justify-self: center;
+}
+
+.discount__description{
+  margin-bottom: var(--mb-1-5);
+  margin-top: var(--mb-1);
 }
 
 /*=============== NEW ARRIVALS ===============*/
@@ -995,6 +999,7 @@ button{
   .it__content{
     padding: 8rem 0 2rem;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 4rem;
   }
   .it__img{
@@ -1050,6 +1055,7 @@ button{
   }
   .discount__data{
     padding-left: 0rem;
+    padding-top: 2rem;
   }
 
   .newsletter__container{
@@ -1079,6 +1085,7 @@ button{
     font-size: var(--h1-font-size);
     text-align: left;
     margin-bottom: var(--mb-1);
+    margin-top: var(--mb-2);
   }
 
   .home__content{
@@ -1115,7 +1122,7 @@ button{
   }
 
   .it__content{
-    padding-top: 9rem;
+    padding-top: 4rem;
     gap: 3rem;
   }
   .it__group{
@@ -1145,6 +1152,11 @@ button{
   .it__description{
     margin-bottom: var(--mb-2-5);
     padding-right: 2rem;
+  }
+
+  .it__description a {
+    font-family: "Maria";
+    color: var(--title-color);
   }
 
   .category__container{
