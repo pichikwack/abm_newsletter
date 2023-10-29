@@ -151,6 +151,7 @@ hr {
   font-size: var(--h1-font-size);
   text-align: left;
   margin-bottom: var(--mb-1);
+  color: var(--title-color);
 }
 
 /*=============== LAYOUT ===============*/
@@ -884,6 +885,12 @@ hr {
   margin-bottom: var(--mb-1);
 }
 
+.footer__title .a{
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-1);
+}
+
 .footer__links{
   list-style: none;
   display: grid;
@@ -995,7 +1002,6 @@ hr {
   }
   .newsletter__description{
     padding: 0.25rem;
-    font-size: var(--small-font-size);
   }
 }
 
@@ -1118,6 +1124,7 @@ hr {
     text-align: left;
     margin-bottom: var(--mb-1);
     margin-top: var(--mb-1);
+    color: var(--title-color);
   }
 
   .home__content{
