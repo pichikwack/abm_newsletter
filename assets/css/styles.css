@@ -983,9 +983,8 @@ hr {
 
   .category__container,
   .trick__container{
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
 }
 
 /* For medium devices */
@@ -1005,9 +1004,8 @@ hr {
   }
   .category__container,
   .trick__container{
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
 }
 
 @media screen and (min-width: 767px){
