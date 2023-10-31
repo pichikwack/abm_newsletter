@@ -542,8 +542,8 @@ hr {
 
 /*=============== CATEGORY ===============*/
 .category__container{
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 2rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
 }
 
 .category__ul{
