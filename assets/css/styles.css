@@ -1057,8 +1057,8 @@ hr {
   }
 
   .category__container{
-    grid-template-columns: 1fr;
-    justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
   }
 
   .about__container{
