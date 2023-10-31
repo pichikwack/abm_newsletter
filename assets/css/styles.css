@@ -542,8 +542,8 @@ hr {
 
 /*=============== CATEGORY ===============*/
 .category__container{
-    grid-template-columns: 1fr;
-    justify-content: center;
+  grid-template-columns: 1fr;
+  justify-content: center;
 }
 
 .category__ul{
@@ -983,8 +983,9 @@ hr {
 
   .category__container,
   .trick__container{
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 2rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
 }
 
 /* For medium devices */
@@ -1002,10 +1003,6 @@ hr {
   .newsletter__description{
     padding: 0.25rem;
   }
-  .category__container,
-  .trick__container{
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 2rem;
 }
 
 @media screen and (min-width: 767px){
@@ -1057,8 +1054,8 @@ hr {
   }
 
   .category__container{
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
   }
 
   .about__container{
